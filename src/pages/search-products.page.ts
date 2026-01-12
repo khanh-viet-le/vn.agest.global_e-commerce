@@ -2,11 +2,11 @@ import { Locator, Page } from "@playwright/test";
 
 export class SearchProductsPage {
   private static route = "/products";
-  private page: Page;
-  private searchInputLocator: Locator;
-  private submitSearchButtonLocator: Locator;
-  private searchedProductsTitleLocator: Locator;
-  private productItemsLocator: Locator;
+  readonly page: Page;
+  readonly searchInputLocator: Locator;
+  readonly submitSearchButtonLocator: Locator;
+  readonly searchedProductsTitleLocator: Locator;
+  readonly productItemsLocator: Locator;
 
   constructor(page: Page) {
     this.page = page;

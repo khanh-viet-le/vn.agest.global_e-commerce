@@ -1,12 +1,12 @@
-import test, { expect } from "playwright/test";
+import { expect } from "playwright/test";
 import searchData from "../data/searchData.json";
-import { SearchProductsPage } from "../src/pages/search-products.page";
+import { test } from "../fixtures";
 
 test.describe("Search Functionality", () => {
   for (const searchItem of searchData) {
-    test(`Search test for ${searchItem.term}`, async ({ page }) => {
-      const searchProductsPage = new SearchProductsPage(page);
-
+    test(`Search test for ${searchItem.term}`, async ({
+      searchProductsPage,
+    }) => {
       // Go to the /products page.
       await searchProductsPage.goto();
 
