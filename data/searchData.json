@@ -1,0 +1,5 @@
+[
+  { "term": "Blue Top", "expectedCount": 1 },
+  { "term": "Dress", "expectedCount": 9 },
+  { "term": "Tshirt", "expectedCount": 6 }
+]
